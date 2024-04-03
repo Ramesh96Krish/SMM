@@ -7,7 +7,7 @@ mongoose.connect(config.MongoDb_Uri) // Connected DB with index file
     console.log('Connected to MongoDB...');
     //Start the server
     app.listen(config.Port, ()=>{
-console.log('Server running on port ${config.port}');
+console.log(`Server running on port ${config.Port}`);
     });
 })
 .catch((error)=>{
